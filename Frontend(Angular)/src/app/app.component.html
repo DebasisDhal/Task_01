@@ -1,0 +1,72 @@
+<nav class="navbar navbar-dark bg-primary">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">XYX</span>
+ 
+
+  </div>
+</nav>
+
+<div class="container" style="  margin-top: 20px;">
+<div class="row">
+<div class="col">
+
+  <div style="text-align: center;">
+  <button type="button" class="btn btn-success text-center" (click)="getAllStudent()" type="submit">Get Students</button>
+</div>
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Student Name</th>
+      <th scope="col">Contact Details</th>
+      <th scope="col">Address</th>
+      <th scope="col">Pin Code</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for(item of students; track $index){
+    <tr>
+      <td>{{item.studentId}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.contactDetails}}</td>
+            <td>{{item.address}}</td>
+            <td>{{item.pinCode}}</td>   
+    </tr>
+  }
+  </tbody>
+</table>
+</div>
+
+
+<div class="col" style="  margin-top: 50px;">
+
+<form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Student Name</label>
+    <input type="text" [(ngModel)]="studentObj.name" class="form-control" name ="name" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" [(ngModel)]="studentObj.contactDetails" name="contactDetails" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Address</label>
+    <input type="text" [(ngModel)]="studentObj.address" name ="address" class="form-control" id="">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">PinCode</label>
+    <input type="text" [(ngModel)]="studentObj.pinCode" name="pinCode" class="form-control" id="">
+  </div>
+  <div style="text-align: center;">
+  <button type="submit" (click)="onSave()" class="btn btn-primary">Submit</button>&nbsp;&nbsp;
+    <a class="btn btn-danger" href="/" role="button">Reset</a>
+    </div>
+</form>
+</div>
+</div>
+</div>
+
+
