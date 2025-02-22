@@ -1,0 +1,152 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+  }
+
+  .container {
+    max-width: 420px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff4081;
+    margin-bottom: 20px;
+  }
+
+  .option {
+    border: 2px solid #ddd;
+    /* Red border like your image */
+    border-radius: 8px;
+    padding: 18px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 380px;
+    margin-bottom: 18px;
+    position: relative;
+  }
+
+  .option label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 12px;
+  }
+
+  .option input[type="radio"] {
+    accent-color: #ff5c78;
+    transform: scale(1.2);
+    /* Bigger radio button */
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    /* Adds spacing between unit text & Standard Price */
+  }
+
+  .top-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .discount {
+    background-color: #ff5c78;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 7px;
+    border-radius: 4px;
+    margin-left: 8px;
+  }
+
+  .price-info {
+    text-align: right;
+  }
+
+  .price {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .original-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 12px;
+  }
+
+  .summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px 0;
+    border-top: 2px dashed #ddd;
+    border-bottom: 2px dashed #ddd;
+  }
+
+  .total {
+    color: #000;
+    font-size: 18px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff4081;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+
+  .btn:hover {
+    background-color: #e0366d;
+  }
+
+  .most-popular {
+    position: absolute;
+    top: -12px;
+    left: 65%;
+    transform: translateX(-50%);
+    background-color: #ff5c78;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 15px;
+  }
+
+  .option-two {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 18px;
+    background-color: #fff;
+    width: 380px;
+    margin-bottom: 18px;
+    position: relative;
+  }
